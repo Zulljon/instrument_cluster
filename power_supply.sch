@@ -1,0 +1,649 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:LM2596SX-5.0_NOPB
+LIBS:lm2575s-5
+LIBS:instrument_cluster-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "Instrument Cluster"
+Date "2017-11-11"
+Rev "v2.0a"
+Comp "Kulibin-Auto Laboratory"
+Comment1 ""
+Comment2 "zulljon"
+Comment3 ""
+Comment4 "Кулибин"
+$EndDescr
+Text HLabel 2300 5250 0    60   Input ~ 0
+Vbatt
+Text HLabel 2300 5350 0    60   Input ~ 0
+IGN
+Text HLabel 2300 5150 0    60   Output ~ 0
++3V3_A
+Text HLabel 2300 5050 0    60   Output ~ 0
++3V3_B
+Text HLabel 4500 5650 2    60   Output ~ 0
++5V_A
+Text HLabel 2300 5450 0    60   BiDi ~ 0
+GND
+Text Label 2500 5250 0    60   ~ 0
+Vbatt
+$Comp
+L GND #PWR?
+U 1 1 5A05B33F
+P 2400 5550
+F 0 "#PWR?" H 2400 5300 50  0001 C CNN
+F 1 "GND" H 2400 5400 50  0000 C CNN
+F 2 "" H 2400 5550 50  0001 C CNN
+F 3 "" H 2400 5550 50  0001 C CNN
+	1    2400 5550
+	1    0    0    -1  
+$EndComp
+Text Label 3650 5200 2    60   ~ 0
++5V_B
+Text Label 1700 1300 2    60   ~ 0
+Vbatt
+Text Label 1750 2950 2    60   ~ 0
++12V_A
+$Comp
+L D_Schottky D?
+U 1 1 5A05B43C
+P 1700 1550
+F 0 "D?" V 1750 1450 50  0000 C CNN
+F 1 "SS22A-SS210A-galaxy" V 1650 1050 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0001 C CNN
+	1    1700 1550
+	0    -1   -1   0   
+$EndComp
+Text Label 2400 5150 0    60   ~ 0
++3V3_A
+Text Label 2400 5050 0    60   ~ 0
++3V3_B
+Text Label 9450 1850 0    60   ~ 0
++3V3_A
+Text Label 9450 2900 0    60   ~ 0
++3V3_B
+$Comp
+L CP C?
+U 1 1 5A05BDD5
+P 2450 2150
+F 0 "C?" H 2475 2250 50  0000 L CNN
+F 1 "100uF" H 2475 2050 50  0000 L CNN
+F 2 "" H 2488 2000 50  0001 C CNN
+F 3 "" H 2450 2150 50  0001 C CNN
+	1    2450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5A05BE41
+P 4500 2150
+F 0 "D?" V 4450 2250 50  0000 C CNN
+F 1 "1N5819" V 4550 2350 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4500 2150 50  0001 C CNN
+F 3 "" H 4500 2150 50  0001 C CNN
+	1    4500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A05BEB6
+P 5000 2150
+F 0 "C?" H 5025 2250 50  0000 L CNN
+F 1 "330uF" H 5025 2050 50  0000 L CNN
+F 2 "" H 5038 2000 50  0001 C CNN
+F 3 "" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 5A05BF6F
+P 4750 1900
+F 0 "L?" V 4850 1900 50  0000 C CNN
+F 1 "330uH" V 4700 1900 50  0000 C CNN
+F 2 "" H 4750 1900 50  0001 C CNN
+F 3 "" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 5350 2400 5350
+Wire Wire Line
+	2300 5250 2500 5250
+Wire Wire Line
+	2300 5450 2400 5450
+Wire Wire Line
+	2400 5450 2400 5550
+Wire Wire Line
+	2300 5150 2400 5150
+Wire Wire Line
+	2300 5050 2400 5050
+Wire Wire Line
+	1700 1400 1700 1300
+Wire Wire Line
+	1700 1700 1700 1800
+Wire Wire Line
+	1700 1800 2450 1800
+Wire Wire Line
+	2450 1800 2800 1800
+Connection ~ 1700 1800
+Wire Wire Line
+	4900 1900 5000 1900
+Wire Wire Line
+	5000 1900 5350 1900
+Wire Wire Line
+	4500 1900 4500 2000
+Wire Wire Line
+	4200 1900 4500 1900
+Wire Wire Line
+	4500 1900 4600 1900
+Wire Wire Line
+	5000 1800 5000 1900
+Wire Wire Line
+	5000 1900 5000 2000
+Connection ~ 5000 1900
+Connection ~ 4500 1900
+Wire Wire Line
+	4200 1800 5000 1800
+Wire Wire Line
+	2450 1800 2450 2000
+Wire Wire Line
+	2800 1900 2700 1900
+Wire Wire Line
+	2800 2000 2700 2000
+Wire Wire Line
+	2700 2350 2700 2000
+Wire Wire Line
+	2700 2000 2700 1900
+Wire Wire Line
+	2450 2350 2450 2300
+$Comp
+L GND #PWR?
+U 1 1 5A05C84D
+P 2550 2400
+F 0 "#PWR?" H 2550 2150 50  0001 C CNN
+F 1 "GND" H 2550 2250 50  0000 C CNN
+F 2 "" H 2550 2400 50  0001 C CNN
+F 3 "" H 2550 2400 50  0001 C CNN
+	1    2550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2400 2550 2350
+Connection ~ 2550 2350
+Wire Wire Line
+	4300 2000 4300 2400
+Wire Wire Line
+	2450 2350 2550 2350
+Wire Wire Line
+	2550 2350 2700 2350
+Wire Wire Line
+	4200 2000 4300 2000
+Connection ~ 4300 2000
+Wire Wire Line
+	4300 2400 4500 2400
+Wire Wire Line
+	4500 2400 5000 2400
+Wire Wire Line
+	5000 2400 5000 2300
+Wire Wire Line
+	4500 2300 4500 2400
+Wire Wire Line
+	4500 2400 4500 2450
+Connection ~ 4500 2400
+Connection ~ 2450 1800
+$Comp
+L LD1117S33TR_SOT223 U?
+U 1 1 5A05D140
+P 8700 1850
+F 0 "U?" H 8650 2100 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 8300 2000 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 8700 2050 50  0001 C CNN
+F 3 "" H 8800 1600 50  0001 C CNN
+	1    8700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A05D2C5
+P 8300 2100
+F 0 "C?" H 8325 2200 50  0000 L CNN
+F 1 "100nF" H 8325 2000 50  0000 L CNN
+F 2 "" H 8338 1950 50  0001 C CNN
+F 3 "" H 8300 2100 50  0001 C CNN
+	1    8300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A05D315
+P 9100 2100
+F 0 "C?" H 9125 2200 50  0000 L CNN
+F 1 "10uF" H 9125 2000 50  0000 L CNN
+F 2 "" H 9138 1950 50  0001 C CNN
+F 3 "" H 9100 2100 50  0001 C CNN
+	1    9100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1950 8300 1850
+Wire Wire Line
+	8050 1850 8300 1850
+Wire Wire Line
+	8300 1850 8400 1850
+Wire Wire Line
+	9100 1950 9100 1850
+Wire Wire Line
+	9000 1850 9100 1850
+Wire Wire Line
+	9100 1850 9450 1850
+$Comp
+L GND #PWR?
+U 1 1 5A05D4B4
+P 8300 2350
+F 0 "#PWR?" H 8300 2100 50  0001 C CNN
+F 1 "GND" H 8300 2200 50  0000 C CNN
+F 2 "" H 8300 2350 50  0001 C CNN
+F 3 "" H 8300 2350 50  0001 C CNN
+	1    8300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A05D4E4
+P 9100 2350
+F 0 "#PWR?" H 9100 2100 50  0001 C CNN
+F 1 "GND" H 9100 2200 50  0000 C CNN
+F 2 "" H 9100 2350 50  0001 C CNN
+F 3 "" H 9100 2350 50  0001 C CNN
+	1    9100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2250 9100 2350
+Wire Wire Line
+	8300 2250 8300 2350
+Connection ~ 9100 1850
+Connection ~ 8300 1850
+$Comp
+L LD1117S33TR_SOT223 U?
+U 1 1 5A05D855
+P 8700 2900
+F 0 "U?" H 8650 3150 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 8300 3050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 8700 3100 50  0001 C CNN
+F 3 "" H 8800 2650 50  0001 C CNN
+	1    8700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A05D85B
+P 8300 3150
+F 0 "C?" H 8325 3250 50  0000 L CNN
+F 1 "100nF" H 8325 3050 50  0000 L CNN
+F 2 "" H 8338 3000 50  0001 C CNN
+F 3 "" H 8300 3150 50  0001 C CNN
+	1    8300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A05D861
+P 9100 3150
+F 0 "C?" H 9125 3250 50  0000 L CNN
+F 1 "10uF" H 9125 3050 50  0000 L CNN
+F 2 "" H 9138 3000 50  0001 C CNN
+F 3 "" H 9100 3150 50  0001 C CNN
+	1    9100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3000 8300 2900
+Wire Wire Line
+	8050 2900 8300 2900
+Wire Wire Line
+	8300 2900 8400 2900
+Wire Wire Line
+	9100 3000 9100 2900
+Wire Wire Line
+	9000 2900 9100 2900
+Wire Wire Line
+	9100 2900 9450 2900
+$Comp
+L GND #PWR?
+U 1 1 5A05D86B
+P 8300 3400
+F 0 "#PWR?" H 8300 3150 50  0001 C CNN
+F 1 "GND" H 8300 3250 50  0000 C CNN
+F 2 "" H 8300 3400 50  0001 C CNN
+F 3 "" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A05D871
+P 9100 3400
+F 0 "#PWR?" H 9100 3150 50  0001 C CNN
+F 1 "GND" H 9100 3250 50  0000 C CNN
+F 2 "" H 9100 3400 50  0001 C CNN
+F 3 "" H 9100 3400 50  0001 C CNN
+	1    9100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3300 9100 3400
+Wire Wire Line
+	8300 3300 8300 3400
+Connection ~ 9100 2900
+Connection ~ 8300 2900
+$Comp
+L D_Schottky D?
+U 1 1 5A05DAFE
+P 4150 5200
+F 0 "D?" H 4150 5100 50  0000 C CNN
+F 1 "SS22A-SS210A-galaxy" H 4150 5300 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 4150 5200 50  0001 C CNN
+F 3 "" H 4150 5200 50  0001 C CNN
+	1    4150 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 5200 4400 5200
+Wire Wire Line
+	4400 5200 4500 5200
+Wire Wire Line
+	4400 4900 4400 5000
+Wire Wire Line
+	4400 5000 4400 5200
+Wire Wire Line
+	4400 4900 4500 4900
+Connection ~ 4400 5200
+Text Label 4500 5950 0    60   ~ 0
+5V->3V3_A
+$Comp
+L D_Schottky D?
+U 1 1 5A05E42D
+P 4150 5950
+F 0 "D?" H 4150 5850 50  0000 C CNN
+F 1 "SS22A-SS210A-galaxy" H 4150 6050 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 4150 5950 50  0001 C CNN
+F 3 "" H 4150 5950 50  0001 C CNN
+	1    4150 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 5950 4400 5950
+Wire Wire Line
+	4400 5950 4500 5950
+Wire Wire Line
+	4400 5650 4400 5750
+Wire Wire Line
+	4400 5750 4400 5950
+Wire Wire Line
+	4400 5650 4500 5650
+Connection ~ 4400 5950
+Text Label 4500 5200 0    60   ~ 0
+5V->3V3_B
+Text HLabel 4500 4900 2    60   Output ~ 0
++5V_B
+Text HLabel 4500 5750 2    60   Input ~ 0
+USB_A
+Wire Wire Line
+	4500 5000 4400 5000
+Connection ~ 4400 5000
+Text HLabel 4500 5000 2    60   Input ~ 0
+USB_B
+Wire Wire Line
+	4500 5750 4400 5750
+Connection ~ 4400 5750
+Text Label 8050 1850 2    60   ~ 0
+5V->3V3_A
+Text Label 8050 2900 2    60   ~ 0
+5V->3V3_B
+Text Label 2400 5350 0    60   ~ 0
+IGN
+Text Label 1750 2500 2    60   ~ 0
+IGN
+Text Label 1700 1800 2    60   ~ 0
++12V_B
+$Comp
+L D_Schottky D?
+U 1 1 5A06D1B0
+P 1750 2700
+F 0 "D?" V 1800 2600 50  0000 C CNN
+F 1 "SS22A-SS210A-galaxy" V 1700 2200 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1750 2700 50  0001 C CNN
+F 3 "" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 2550 1750 2500
+Wire Wire Line
+	1750 2850 1750 2950
+Connection ~ 1750 2950
+Text Label 3650 5950 2    60   ~ 0
++5V_A
+Wire Wire Line
+	4000 5200 3650 5200
+Wire Wire Line
+	4000 5950 3650 5950
+Wire Notes Line
+	1850 4600 1850 6200
+Wire Notes Line
+	1850 6200 5200 6200
+Wire Notes Line
+	5200 6200 5200 4600
+Wire Notes Line
+	5200 4600 1850 4600
+Text Notes 2850 4750 0    118  ~ 0
+connectors
+Wire Notes Line
+	1150 1150 1150 3750
+Wire Notes Line
+	1150 3750 6100 3750
+Wire Notes Line
+	6100 3750 6100 1150
+Wire Notes Line
+	6100 1150 1150 1150
+Text Notes 1900 1350 0    118  ~ 0
+DC-DC impulse step-down  voltage regulator
+Text Notes 7200 1450 0    118  ~ 0
+low drop positive voltage regulator
+Wire Notes Line
+	6800 900  6800 4050
+Wire Notes Line
+	6800 4050 10600 4050
+Wire Notes Line
+	10600 4050 10600 900 
+Wire Notes Line
+	10600 900  6800 900 
+$Comp
+L LM2575S-5.0_NOPB U?
+U 1 1 5A0723D2
+P 2800 1800
+F 0 "U?" H 3500 1950 50  0000 C CNN
+F 1 "LM2575S-5.0_NOPB" H 3500 1450 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin6" H 3500 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm2575" H 3500 1250 50  0001 C CNN
+F 4 "SIMPLE SWITCHER 1.23V to 37V, 1A Low Component Count Step-Down Regulator" H 3500 1150 50  0001 C CNN "Description"
+F 5 "RS" H 3500 1050 50  0001 C CNN "Supplier_Name"
+F 6 "Texas Instruments" H 3500 850 50  0001 C CNN "Manufacturer_Name"
+F 7 "LM2575S-5.0/NOPB" H 3500 750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2800 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 2000
+$Comp
+L CP C?
+U 1 1 5A0729A5
+P 2500 3300
+F 0 "C?" H 2525 3400 50  0000 L CNN
+F 1 "100uF" H 2525 3200 50  0000 L CNN
+F 2 "" H 2538 3150 50  0001 C CNN
+F 3 "" H 2500 3300 50  0001 C CNN
+	1    2500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5A0729AB
+P 4550 3300
+F 0 "D?" V 4500 3400 50  0000 C CNN
+F 1 "1N5819" V 4600 3500 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 4550 3300 50  0001 C CNN
+F 3 "" H 4550 3300 50  0001 C CNN
+	1    4550 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A0729B1
+P 5050 3300
+F 0 "C?" H 5075 3400 50  0000 L CNN
+F 1 "330uF" H 5075 3200 50  0000 L CNN
+F 2 "" H 5088 3150 50  0001 C CNN
+F 3 "" H 5050 3300 50  0001 C CNN
+	1    5050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 5A0729B7
+P 4800 3050
+F 0 "L?" V 4900 3050 50  0000 C CNN
+F 1 "330uH" V 4750 3050 50  0000 C CNN
+F 2 "" H 4800 3050 50  0001 C CNN
+F 3 "" H 4800 3050 50  0001 C CNN
+	1    4800 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 2950 2500 2950
+Wire Wire Line
+	2500 2950 2850 2950
+Wire Wire Line
+	4950 3050 5050 3050
+Wire Wire Line
+	5050 3050 5400 3050
+Wire Wire Line
+	4550 3050 4550 3150
+Wire Wire Line
+	4250 3050 4550 3050
+Wire Wire Line
+	4550 3050 4650 3050
+Wire Wire Line
+	5050 2950 5050 3050
+Wire Wire Line
+	5050 3050 5050 3150
+Connection ~ 5050 3050
+Connection ~ 4550 3050
+Wire Wire Line
+	4250 2950 5050 2950
+Wire Wire Line
+	2500 2950 2500 3150
+Wire Wire Line
+	2850 3050 2750 3050
+Wire Wire Line
+	2850 3150 2750 3150
+Wire Wire Line
+	2750 3500 2750 3150
+Wire Wire Line
+	2750 3150 2750 3050
+Wire Wire Line
+	2500 3500 2500 3450
+$Comp
+L GND #PWR?
+U 1 1 5A0729CF
+P 2600 3550
+F 0 "#PWR?" H 2600 3300 50  0001 C CNN
+F 1 "GND" H 2600 3400 50  0000 C CNN
+F 2 "" H 2600 3550 50  0001 C CNN
+F 3 "" H 2600 3550 50  0001 C CNN
+	1    2600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3550 2600 3500
+Connection ~ 2600 3500
+Wire Wire Line
+	4350 3150 4350 3550
+Wire Wire Line
+	2500 3500 2600 3500
+Wire Wire Line
+	2600 3500 2750 3500
+Wire Wire Line
+	4250 3150 4350 3150
+Connection ~ 4350 3150
+Wire Wire Line
+	4350 3550 4550 3550
+Wire Wire Line
+	4550 3550 5050 3550
+Wire Wire Line
+	5050 3550 5050 3450
+Wire Wire Line
+	4550 3450 4550 3550
+Wire Wire Line
+	4550 3550 4550 3600
+Connection ~ 4550 3550
+Connection ~ 2500 2950
+$Comp
+L LM2575S-5.0_NOPB U?
+U 1 1 5A0729E7
+P 2850 2950
+F 0 "U?" H 3550 3100 50  0000 C CNN
+F 1 "LM2575S-5.0_NOPB" H 3550 2600 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin6" H 3550 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/lm2575" H 3550 2400 50  0001 C CNN
+F 4 "SIMPLE SWITCHER 1.23V to 37V, 1A Low Component Count Step-Down Regulator" H 3550 2300 50  0001 C CNN "Description"
+F 5 "RS" H 3550 2200 50  0001 C CNN "Supplier_Name"
+F 6 "Texas Instruments" H 3550 2000 50  0001 C CNN "Manufacturer_Name"
+F 7 "LM2575S-5.0/NOPB" H 3550 1900 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2850 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 3150
+Text Label 5350 1900 0    60   ~ 0
++5V_B
+Text Label 5400 3050 0    60   ~ 0
++5V_A
+$EndSCHEMATC
