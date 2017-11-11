@@ -301,8 +301,8 @@ $EndSheet
 $Sheet
 S 4350 3450 1150 950 
 U 5A0472EA
-F0 "2can_filtr" 60
-F1 "2can_filtr.sch" 60
+F0 "2can_filter" 60
+F1 "2can_filter.sch" 60
 F2 "+3V3" I L 4350 4150 60 
 F3 "CAN1_H" I L 4350 3550 60 
 F4 "CAN1_L" I L 4350 3650 60 
@@ -315,8 +315,8 @@ $EndSheet
 $Sheet
 S 9000 2650 2400 2800
 U 5A0472F5
-F0 "2can_filtr+extra" 60
-F1 "2can_filtr+extra.sch" 60
+F0 "2can_filter+extra" 60
+F1 "2can_filter+extra.sch" 60
 F2 "+3V3" I L 9000 5000 60 
 F3 "GND" I L 9000 5400 60 
 F4 "+5V" I L 9000 4900 60 
