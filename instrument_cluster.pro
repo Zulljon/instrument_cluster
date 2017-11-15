@@ -1,4 +1,4 @@
-update=11.11.2017 15:13:44
+update=Ср 15 ноя 2017 13:23:00
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../libs
+LibDir=/mnt/DATA2/pCloud/job/KiCAD/libs/symbols;/mnt/DATA2/pCloud/job/KiCAD/digikey-kicad-library/symbols
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -65,3 +65,5 @@ LibName33=stm32
 LibName34=C:/Program Files/KiCad/share/kicad/library/stm32
 LibName35=LM2596SX-5.0_NOPB
 LibName36=lm2575s-5
+LibName37=74HC4050D
+LibName38=54819-0572

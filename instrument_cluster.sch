@@ -34,10 +34,12 @@ LIBS:valves
 LIBS:stm32
 LIBS:LM2596SX-5.0_NOPB
 LIBS:lm2575s-5
+LIBS:74HC4050D
+LIBS:54819-0572
 LIBS:instrument_cluster-cache
 EELAYER 25 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Instrument Cluster"
@@ -50,326 +52,645 @@ Comment3 ""
 Comment4 "Кулибин"
 $EndDescr
 $Comp
-L Conn_02x16_Top_Bottom J?
-U 1 1 5A0442C8
-P 3900 8950
-F 0 "J?" H 3950 9750 50  0000 C CNN
-F 1 "Conn_02x16_Top_Bottom" H 3950 8050 50  0000 C CNN
-F 2 "" H 3900 8950 50  0001 C CNN
-F 3 "" H 3900 8950 50  0001 C CNN
-	1    3900 8950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_02x16_Top_Bottom J?
+L Conn_02x16_Top_Bottom J2
 U 1 1 5A044334
-P 13850 8250
-F 0 "J?" H 13900 9050 50  0000 C CNN
-F 1 "Conn_02x16_Top_Bottom" H 13900 7350 50  0000 C CNN
-F 2 "" H 13850 8250 50  0001 C CNN
-F 3 "" H 13850 8250 50  0001 C CNN
-	1    13850 8250
-	1    0    0    -1  
+P 9450 2000
+F 0 "J2" H 9500 2800 50  0000 C CNN
+F 1 "Conn_02x16_Top_Bottom" H 9500 1100 50  0000 C CNN
+F 2 "" H 9450 2000 50  0001 C CNN
+F 3 "" H 9450 2000 50  0001 C CNN
+	1    9450 2000
+	1    0    0    1   
 $EndComp
-Text Notes 3700 7900 0    60   ~ 0
+Text Notes 1650 5250 0    60   ~ 0
 FROM CONNECTOR IN OLD CAR
-Text Notes 12900 7400 0    60   ~ 0
+Text Notes 8650 1050 0    60   ~ 0
 TO CONNECTOR IN NEW INSTRUMENT CLUSTER
-Entry Wire Line
-	1450 8050 1550 8150
-Entry Wire Line
-	1450 7950 1550 8050
-Text Label 1600 8050 0    60   ~ 0
-HS_CAN_H
-Text Label 1600 8150 0    60   ~ 0
-HS_CAN_L
-Wire Wire Line
-	1550 8150 1600 8150
-Entry Wire Line
-	1450 8250 1550 8350
-Entry Wire Line
-	1450 8150 1550 8250
-Text Label 1600 8250 0    60   ~ 0
-MS_CAN_H
-Text Label 1600 8350 0    60   ~ 0
-MS_CAN_L
-Wire Wire Line
-	1550 8250 1600 8250
-Wire Wire Line
-	1550 8350 1600 8350
-Entry Wire Line
-	1450 8350 1550 8450
-Entry Wire Line
-	1450 8450 1550 8550
-Entry Wire Line
-	1450 9750 1550 9850
-Entry Wire Line
-	1450 9850 1550 9950
-Entry Wire Line
-	1450 8550 1550 8650
-Entry Wire Line
-	1450 8650 1550 8750
-Entry Wire Line
-	1450 8750 1550 8850
-Wire Wire Line
-	1550 8450 1600 8450
-Wire Wire Line
-	1550 8550 1600 8550
-Wire Wire Line
-	1550 9850 1600 9850
-Wire Wire Line
-	1550 9950 1600 9950
-Wire Wire Line
-	1550 8650 1600 8650
-Wire Wire Line
-	1550 8750 1600 8750
-Wire Wire Line
-	1550 8850 1600 8850
 Wire Notes Line
-	1300 7800 5150 7800
+	700  5150 3950 5150
 Wire Notes Line
-	5150 7800 5150 10300
+	3950 5150 3950 7650
 Wire Notes Line
-	5150 10300 1300 10300
+	3950 7650 700  7650
 Wire Notes Line
-	1300 10300 1300 7800
-Text Label 1600 8450 0    60   ~ 0
-TRIP_COMPUTER
-Text Label 1600 8550 0    60   ~ 0
-ILLUM
-Text Label 1600 9850 0    60   ~ 0
-VBATT
-Text Label 1600 9950 0    60   ~ 0
-IGN
-Text Label 1600 8650 0    60   ~ 0
-ANTI-THEFT
-Text Label 1600 8750 0    60   ~ 0
-PAD-WEAR
-Text Label 1600 8850 0    60   ~ 0
-OIL-pressure
-Text Label 1600 8950 0    60   ~ 0
-PARKING_BRAKE
-Text Label 1600 9050 0    60   ~ 0
-FUEL_TANK_in1
-Text Label 1600 9150 0    60   ~ 0
-FUEL_TANK_in2
-Text Label 1600 9250 0    60   ~ 0
-FUEL_TANK_out
-Text Label 1600 9350 0    60   ~ 0
-ENGINE(coolant_level)
-Text Label 1600 9450 0    60   ~ 0
-LAW_WASHER(fluid_level)
-Entry Wire Line
-	1450 8850 1550 8950
-Entry Wire Line
-	1450 8950 1550 9050
-Entry Wire Line
-	1450 9050 1550 9150
-Entry Wire Line
-	1450 9150 1550 9250
-Entry Wire Line
-	1450 9250 1550 9350
-Entry Wire Line
-	1450 9350 1550 9450
-Entry Wire Line
-	1450 9650 1550 9750
-Wire Wire Line
-	1550 8950 1600 8950
-Wire Wire Line
-	1550 9050 1600 9050
-Wire Wire Line
-	1550 9150 1600 9150
-Wire Wire Line
-	1550 9250 1600 9250
-Wire Wire Line
-	1550 9350 1600 9350
-Wire Wire Line
-	1550 9450 1600 9450
-Wire Wire Line
-	1550 9750 1600 9750
-Text Label 1600 9750 0    60   ~ 0
+	700  7650 700  5150
+Text Label 1000 7500 0    60   ~ 0
 GND
-Text Label 1600 9550 0    60   ~ 0
-BRAKE(fluid_level)
-Text Label 1600 9650 0    60   ~ 0
-BELT_MINDER
-Wire Wire Line
-	1600 9550 1550 9550
-Wire Wire Line
-	1600 9650 1550 9650
-Entry Wire Line
-	1450 9550 1550 9650
-Entry Wire Line
-	1450 9450 1550 9550
-Wire Wire Line
-	1550 8050 1600 8050
-Entry Wire Line
-	1450 10050 1550 10150
-Wire Wire Line
-	1550 10150 1600 10150
-Text Label 1600 10150 0    60   ~ 0
-RR_FOG
-Entry Wire Line
-	1450 9950 1550 10050
-Wire Wire Line
-	1550 10050 1600 10050
-Text Label 1600 10050 0    60   ~ 0
-FR_FOG
-Entry Wire Line
-	15100 7500 15200 7600
-Entry Wire Line
-	15100 7400 15200 7500
-Text Label 15250 7500 0    60   ~ 0
-HS_CAN_H
-Text Label 15250 7600 0    60   ~ 0
-HS_CAN_L
-Wire Wire Line
-	15200 7600 15250 7600
-Entry Wire Line
-	15100 7700 15200 7800
-Entry Wire Line
-	15100 7600 15200 7700
-Text Label 15250 7700 0    60   ~ 0
-MS_CAN_H
-Text Label 15250 7800 0    60   ~ 0
-MS_CAN_L
-Wire Wire Line
-	15200 7700 15250 7700
-Wire Wire Line
-	15200 7800 15250 7800
-Entry Wire Line
-	15100 7800 15200 7900
-Entry Wire Line
-	15100 7900 15200 8000
-Entry Wire Line
-	15100 8000 15200 8100
-Entry Wire Line
-	15100 8100 15200 8200
-Entry Wire Line
-	15100 8200 15200 8300
-Wire Wire Line
-	15200 7900 15250 7900
-Wire Wire Line
-	15200 8000 15250 8000
-Wire Wire Line
-	15200 8100 15250 8100
-Wire Wire Line
-	15200 8200 15250 8200
-Wire Wire Line
-	15200 8300 15250 8300
-Text Label 15250 8000 0    60   ~ 0
-VBATT
-Text Label 15250 8200 0    60   ~ 0
-ESCL
-Text Label 15250 7900 0    60   ~ 0
-ANTI-THEFT
-Text Label 15250 8100 0    60   ~ 0
-GND
-Wire Wire Line
-	15200 7500 15250 7500
-Text Label 15250 8300 0    60   ~ 0
-SPIRAL
-Wire Bus Line
-	15100 1050 15100 8200
 Wire Notes Line
-	12900 7300 12900 9250
+	8400 950  8400 2900
 Wire Notes Line
-	12900 9250 15800 9250
+	8400 2900 10950 2900
 Wire Notes Line
-	15800 9250 15800 7300
+	10950 2900 10950 950 
 Wire Notes Line
-	15800 7300 12900 7300
-Wire Bus Line
-	1450 1050 1450 10050
-NoConn ~ 1600 10150
-NoConn ~ 1600 10050
+	10950 950  8400 950 
 $Sheet
-S 7550 8300 2000 1250
+S 5950 3150 1500 800 
 U 5A047293
 F0 "power_supply" 60
 F1 "power_supply.sch" 60
-F2 "Vbatt" I L 7550 8450 118
-F3 "IGN" I L 7550 8600 118
-F4 "+3V3_A" O R 9550 8900 118
-F5 "+3V3_B" O R 9550 8750 118
-F6 "+5V_A" O R 9550 9350 118
-F7 "GND" B L 7550 9350 118
-F8 "+5V_B" O R 9550 9200 118
-F9 "USB_A" I L 7550 8900 118
-F10 "USB_B" I L 7550 9050 118
+F2 "Vbatt" I L 5950 3300 59 
+F3 "IGN" I L 5950 3400 59 
+F4 "+3V3_A" O R 7450 3550 59 
+F5 "+3V3_B" O R 7450 3450 59 
+F6 "+5V_A" O R 7450 3750 59 
+F7 "GND" B L 5950 3900 59 
+F8 "+5V_B" O R 7450 3650 59 
+F9 "USB_A" I L 5950 3600 59 
+F10 "USB_B" I L 5950 3700 59 
+F11 "FUEL_ADC_POWER" O R 7450 3350 59 
+F12 "LIN_+12V" O R 7450 3250 59 
 $EndSheet
 $Sheet
-S 4350 3450 1150 950 
+S 6200 1450 1150 950 
 U 5A0472EA
-F0 "2can_filter" 60
+F0 "Module A (2can_filter)" 60
 F1 "2can_filter.sch" 60
-F2 "+3V3" I L 4350 4150 60 
-F3 "CAN1_H" I L 4350 3550 60 
-F4 "CAN1_L" I L 4350 3650 60 
-F5 "CAN2_H" I L 4350 3750 60 
-F6 "CAN2_L" I L 4350 3850 60 
-F7 "GND" I L 4350 4350 60 
-F8 "+5V" I L 4350 4050 60 
-F9 "USB_Vbus_A" I L 4350 4250 60 
+F2 "+3V3" I L 6200 2150 60 
+F3 "CAN1_H" I L 6200 1550 60 
+F4 "CAN1_L" I L 6200 1650 60 
+F5 "CAN2_H" I L 6200 1750 60 
+F6 "CAN2_L" I L 6200 1850 60 
+F7 "GND" I L 6200 2350 60 
+F8 "+5V" I L 6200 2050 60 
+F9 "USB_Vbus_A" I L 6200 2250 60 
 $EndSheet
 $Sheet
-S 9000 2650 2400 2800
+S 2350 1200 1650 2800
 U 5A0472F5
-F0 "2can_filter+extra" 60
+F0 "Module B (2can_filter+extra)" 60
 F1 "2can_filter+extra.sch" 60
-F2 "+3V3" I L 9000 5000 60 
-F3 "GND" I L 9000 5400 60 
-F4 "+5V" I L 9000 4900 60 
-F5 "USB_Vbus_B" I L 9000 5100 60 
-F6 "CAN1_H" B L 9000 2700 60 
-F7 "CAN1_L" B L 9000 2800 60 
-F8 "CAN2_H" B L 9000 2900 60 
-F9 "CAN2_L" B L 9000 3000 60 
+F2 "+3V3" I L 2350 3550 60 
+F3 "GND" I L 2350 3950 60 
+F4 "+5V" I L 2350 3450 60 
+F5 "USB_Vbus_B" O L 2350 3650 60 
+F6 "CAN1_H" B L 2350 1250 60 
+F7 "CAN1_L" B L 2350 1350 60 
+F8 "CAN2_H" B L 2350 1450 60 
+F9 "CAN2_L" B L 2350 1550 60 
+F10 "TRIP_COMPUTER" I L 2350 1650 60 
+F11 "ILLUM" I L 2350 1750 60 
+F12 "ANTI-THEFT" I L 2350 1850 60 
+F13 "PAD-WEAR" I L 2350 1950 60 
+F14 "OIL(pressure_level)" I L 2350 2050 60 
+F15 "PARKING-BRAKE" I L 2350 2150 60 
+F16 "FUEL_ADC_1" I L 2350 2250 60 
+F17 "FUEL_ADC_2" I L 2350 2350 60 
+F18 "ENGINE(coolant_level)" I L 2350 2450 60 
+F19 "LAW_WASHER(fluid_level)" I L 2350 2550 60 
+F20 "BRAKE(fluid_level)" I L 2350 2650 60 
+F21 "BELT_MINDER" I L 2350 2750 60 
+F22 "LIN_+12V" I L 2350 3750 60 
+F23 "LIN" B L 2350 2850 60 
 $EndSheet
-Wire Bus Line
-	1450 1050 15100 1050
-Text Notes 7900 10500 0    62   ~ 0
-two separate module on 1 PCB\n- module B power from Vbatt\n- module A power from IGN\n(Vbatt present always)
+Text Notes 7200 5900 0    118  ~ 0
+two separate module on 1 PCB\n- module B powered from Vbatt\n- module A powered from IGN\n(Vbatt present always)
 Wire Wire Line
-	7550 8450 7450 8450
+	5350 3300 5950 3300
 Wire Wire Line
-	7550 8600 7450 8600
+	5350 3400 5950 3400
 Wire Wire Line
-	7550 8900 7450 8900
+	5950 3600 5350 3600
 Wire Wire Line
-	7550 9050 7450 9050
+	5950 3700 5350 3700
 Wire Wire Line
-	7550 9350 7350 9350
+	5950 3900 5750 3900
 Wire Wire Line
-	7350 9350 7350 9550
+	5750 3900 5750 4000
 $Comp
-L GND #PWR?
+L GND #PWR01
 U 1 1 5A075102
-P 7350 9550
-F 0 "#PWR?" H 7350 9300 50  0001 C CNN
-F 1 "GND" H 7350 9400 50  0000 C CNN
-F 2 "" H 7350 9550 50  0001 C CNN
-F 3 "" H 7350 9550 50  0001 C CNN
-	1    7350 9550
+P 5750 4000
+F 0 "#PWR01" H 5750 3750 50  0001 C CNN
+F 1 "GND" H 5750 3850 50  0000 C CNN
+F 2 "" H 5750 4000 50  0001 C CNN
+F 3 "" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A0766C2
+P 1000 7500
+F 0 "#PWR02" H 1000 7250 50  0001 C CNN
+F 1 "GND" H 1150 7450 50  0000 C CNN
+F 2 "" H 1000 7500 50  0001 C CNN
+F 3 "" H 1000 7500 50  0001 C CNN
+	1    1000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3350 8200 3350
+Text Label 7550 3350 0    60   ~ 0
+FUEL_TANK_in
+Entry Wire Line
+	850  7400 950  7500
+Wire Wire Line
+	950  7500 1000 7500
+Wire Bus Line
+	850  700  850  7400
+Wire Bus Line
+	850  700  10800 700 
+Text Label 5400 1550 0    60   ~ 0
+HS_CAN_H
+Text Label 5400 1650 0    60   ~ 0
+HS_CAN_L
+Text Label 5400 1750 0    60   ~ 0
+MS_CAN_H
+Text Label 5400 1850 0    60   ~ 0
+MS_CAN_L
+Entry Wire Line
+	5250 1450 5350 1550
+Entry Wire Line
+	5250 1550 5350 1650
+Entry Wire Line
+	5250 1650 5350 1750
+Entry Wire Line
+	5250 1750 5350 1850
+Entry Wire Line
+	5250 2150 5350 2250
+Wire Wire Line
+	5350 1550 6200 1550
+Wire Wire Line
+	5350 1650 6200 1650
+Wire Wire Line
+	5350 1750 6200 1750
+Wire Wire Line
+	5350 1850 6200 1850
+Wire Wire Line
+	5350 2250 6200 2250
+Wire Wire Line
+	6200 2350 5800 2350
+Wire Wire Line
+	5800 2350 5800 2450
+$Comp
+L GND #PWR03
+U 1 1 5A0B0A63
+P 5800 2450
+F 0 "#PWR03" H 5800 2200 50  0001 C CNN
+F 1 "GND" H 5800 2300 50  0000 C CNN
+F 2 "" H 5800 2450 50  0001 C CNN
+F 3 "" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	1    0    0    -1  
+$EndComp
+Text Label 1000 1250 0    60   ~ 0
+HS_CAN_H
+Text Label 1000 1350 0    60   ~ 0
+HS_CAN_L
+Text Label 1000 1450 0    60   ~ 0
+MS_CAN_H
+Text Label 1000 1550 0    60   ~ 0
+MS_CAN_L
+Entry Wire Line
+	850  1150 950  1250
+Entry Wire Line
+	850  1250 950  1350
+Entry Wire Line
+	850  1350 950  1450
+Entry Wire Line
+	850  1450 950  1550
+Wire Wire Line
+	950  1250 2350 1250
+Wire Wire Line
+	950  1350 2350 1350
+Wire Wire Line
+	950  1450 2350 1450
+Wire Wire Line
+	950  1550 2350 1550
+Text Label 1000 1650 0    60   ~ 0
+TRIP_COMPUTER
+Text Label 1000 1750 0    60   ~ 0
+ILLUM
+Text Label 5500 3300 0    60   ~ 0
+VBATT
+Text Label 5500 3400 0    60   ~ 0
+IGN
+Text Label 1000 1850 0    60   ~ 0
+ANTI-THEFT
+Text Label 1000 1950 0    60   ~ 0
+PAD-WEAR
+Text Label 1000 2050 0    60   ~ 0
+OIL-pressure
+Text Label 1000 2150 0    60   ~ 0
+PARKING_BRAKE
+Text Label 1000 2250 0    60   ~ 0
+FUEL_TANK_out1
+Text Label 1000 2350 0    60   ~ 0
+FUEL_TANK_out2
+Text Label 1000 2450 0    60   ~ 0
+ENGINE(coolant_level)
+Text Label 1000 2550 0    60   ~ 0
+LAW_WASHER(fluid_level)
+Text Label 1000 2650 0    60   ~ 0
+BRAKE(fluid_level)
+Text Label 1000 2750 0    60   ~ 0
+BELT_MINDER
+Entry Wire Line
+	850  1550 950  1650
+Entry Wire Line
+	850  1650 950  1750
+Entry Wire Line
+	850  1750 950  1850
+Entry Wire Line
+	850  1850 950  1950
+Entry Wire Line
+	850  1950 950  2050
+Wire Wire Line
+	950  1650 2350 1650
+Wire Wire Line
+	950  1750 2350 1750
+Wire Wire Line
+	950  1850 2350 1850
+Wire Wire Line
+	950  1950 2350 1950
+Wire Wire Line
+	950  2050 2350 2050
+Entry Wire Line
+	850  2150 950  2250
+Entry Wire Line
+	850  2050 950  2150
+Wire Wire Line
+	950  2250 2350 2250
+Entry Wire Line
+	850  2350 950  2450
+Entry Wire Line
+	850  2250 950  2350
+Wire Wire Line
+	950  2350 2350 2350
+Wire Wire Line
+	950  2450 2350 2450
+Entry Wire Line
+	850  2450 950  2550
+Entry Wire Line
+	850  2550 950  2650
+Entry Wire Line
+	850  2650 950  2750
+Entry Wire Line
+	5250 3200 5350 3300
+Wire Wire Line
+	950  2550 2350 2550
+Wire Wire Line
+	950  2650 2350 2650
+Wire Wire Line
+	950  2750 2350 2750
+Wire Wire Line
+	950  2150 2350 2150
+Entry Wire Line
+	5250 3300 5350 3400
+Wire Bus Line
+	5250 700  5250 4350
+Entry Wire Line
+	850  3450 950  3550
+Entry Wire Line
+	850  3350 950  3450
+Wire Wire Line
+	2350 3450 950  3450
+Wire Wire Line
+	950  3550 2350 3550
+Wire Wire Line
+	2350 3650 950  3650
+Wire Wire Line
+	2350 3750 950  3750
+Wire Wire Line
+	2350 3950 2250 3950
+Wire Wire Line
+	2250 3950 2250 4050
+$Comp
+L GND #PWR04
+U 1 1 5A0C0519
+P 2250 4050
+F 0 "#PWR04" H 2250 3800 50  0001 C CNN
+F 1 "GND" H 2250 3900 50  0000 C CNN
+F 2 "" H 2250 4050 50  0001 C CNN
+F 3 "" H 2250 4050 50  0001 C CNN
+	1    2250 4050
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	1450 7150 1550 7250
+	850  3550 950  3650
+Entry Wire Line
+	850  3650 950  3750
+Entry Wire Line
+	5250 3500 5350 3600
+Entry Wire Line
+	5250 3600 5350 3700
+Text Label 1050 3750 0    60   ~ 0
+LIN_+12V
+Text Label 1050 3650 0    60   ~ 0
+USB_Vbus_B
+Text Label 5400 2250 0    60   ~ 0
+USB_Vbus_A
+Text Label 7550 3250 0    60   ~ 0
+LIN_+12V
+Text Label 7550 3550 0    60   ~ 0
++3V3_A
+Text Label 7550 3450 0    60   ~ 0
++3V3_B
+Text Label 7550 3750 0    60   ~ 0
++5V_A
+Text Label 7550 3650 0    60   ~ 0
++5V_B
 Wire Wire Line
-	1550 7250 1700 7250
-Text Label 1600 7250 0    60   ~ 0
-GND
+	7450 3750 8200 3750
+Wire Wire Line
+	7450 3650 8200 3650
+Wire Wire Line
+	7450 3550 8200 3550
+Wire Wire Line
+	7450 3450 8200 3450
+Wire Wire Line
+	7450 3250 8200 3250
+Entry Wire Line
+	8200 3250 8300 3350
+Entry Wire Line
+	8200 3350 8300 3450
+Entry Wire Line
+	8200 3450 8300 3550
+Entry Wire Line
+	8200 3550 8300 3650
+Entry Wire Line
+	8200 3650 8300 3750
+Entry Wire Line
+	8200 3750 8300 3850
+Wire Bus Line
+	8300 3350 8300 4350
+Wire Bus Line
+	8300 4350 5250 4350
+Text Label 5400 2050 0    60   ~ 0
++5V_A
+Text Label 5400 2150 0    60   ~ 0
++3V3_A
+Entry Wire Line
+	5250 1950 5350 2050
+Entry Wire Line
+	5250 2050 5350 2150
+Wire Wire Line
+	5350 2050 6200 2050
+Wire Wire Line
+	5350 2150 6200 2150
+Text Label 1050 3450 0    60   ~ 0
++5V_B
+Text Label 1050 3550 0    60   ~ 0
++3V3_B
+Text Label 1000 2850 0    60   ~ 0
+LIN_(contact_spiral)
+Entry Wire Line
+	850  2750 950  2850
+Wire Wire Line
+	950  2850 2350 2850
+Text Label 5350 3600 0    60   ~ 0
+USB_Vbus_A
+Text Label 5350 3700 0    60   ~ 0
+USB_Vbus_B
 $Comp
-L GND #PWR?
-U 1 1 5A0766C2
-P 1700 7350
-F 0 "#PWR?" H 1700 7100 50  0001 C CNN
-F 1 "GND" H 1700 7200 50  0000 C CNN
-F 2 "" H 1700 7350 50  0001 C CNN
-F 3 "" H 1700 7350 50  0001 C CNN
-	1    1700 7350
-	1    0    0    -1  
+L Conn_02x16_Top_Bottom J1
+U 1 1 5A0A21A8
+P 2350 6550
+F 0 "J1" H 2400 5450 50  0000 C CNN
+F 1 "Conn_02x16_Top_Bottom" H 2400 5550 50  0000 C CNN
+F 2 "Kulibin:Pin_Header_Angled_2x16_Pitch2.54mm" H 2350 6550 50  0001 C CNN
+F 3 "" H 2350 6550 50  0001 C CNN
+	1    2350 6550
+	-1   0    0    1   
 $EndComp
+Text Label 2050 6850 2    60   ~ 0
+BRAKE(fluid_level)
+Text Label 2550 6450 0    60   ~ 0
+PAD-WEAR
+Text Label 2550 6750 0    60   ~ 0
+BELT_MINDER
+Text Label 2050 6750 2    60   ~ 0
+TRIP_COMPUTER
+Text Label 2050 5750 2    60   ~ 0
+GND
+Text Label 2050 5850 2    60   ~ 0
+GND
+Text Label 2550 7250 0    60   ~ 0
+HS_CAN_H
+Text Label 2550 7150 0    60   ~ 0
+HS_CAN_L
+Text Label 2050 7250 2    60   ~ 0
+MS_CAN_H
+Text Label 2050 7150 2    60   ~ 0
+MS_CAN_L
+Text Label 2550 6850 0    60   ~ 0
+ILLUM
+Text Label 2050 6550 2    60   ~ 0
+FR_FOG
+Text Label 2050 6950 2    60   ~ 0
+RR_FOG
+NoConn ~ 2050 6550
+NoConn ~ 2050 6950
+Text Label 2550 5750 0    60   ~ 0
+VBATT
+Text Label 2550 6650 0    60   ~ 0
+ANTI-THEFT
+Text Label 2550 5850 0    60   ~ 0
+IGN
+Text Label 2550 7050 0    60   ~ 0
+OIL-pressure
+Text Label 2550 6550 0    60   ~ 0
+PARKING_BRAKE
+Text Label 2050 6250 2    60   ~ 0
+FUEL_TANK_out1
+Text Label 2550 6150 0    60   ~ 0
+FUEL_TANK_out2
+Text Label 2550 6050 0    60   ~ 0
+FUEL_TANK_in
+Text Label 2050 7050 2    60   ~ 0
+ENGINE(coolant_level)
+Text Label 2550 6950 0    60   ~ 0
+LAW_WASHER(fluid_level)
+NoConn ~ 2550 5950
+NoConn ~ 2050 5950
+NoConn ~ 2050 6050
+NoConn ~ 2050 6150
+NoConn ~ 2050 6350
+NoConn ~ 2050 6450
+NoConn ~ 2550 6350
+NoConn ~ 2550 6250
+NoConn ~ 2050 6650
 Wire Wire Line
-	1700 7250 1700 7350
+	2550 5750 3650 5750
+Wire Wire Line
+	2550 5850 3650 5850
+Wire Wire Line
+	2550 6050 3650 6050
+Wire Wire Line
+	2550 6150 3650 6150
+Wire Wire Line
+	2550 6450 3650 6450
+Wire Wire Line
+	2550 6550 3650 6550
+Wire Wire Line
+	2550 6650 3650 6650
+Wire Wire Line
+	2550 6750 3650 6750
+Wire Wire Line
+	2550 6850 3650 6850
+Wire Wire Line
+	2550 6950 3650 6950
+Wire Wire Line
+	2550 7050 3650 7050
+Wire Wire Line
+	2550 7150 3650 7150
+Wire Wire Line
+	2550 7250 3650 7250
+Wire Wire Line
+	950  5750 2050 5750
+Wire Wire Line
+	950  5850 2050 5850
+Wire Wire Line
+	950  6250 2050 6250
+Wire Wire Line
+	950  6550 2050 6550
+Wire Wire Line
+	950  6750 2050 6750
+Wire Wire Line
+	950  6850 2050 6850
+Wire Wire Line
+	950  6950 2050 6950
+Wire Wire Line
+	950  7050 2050 7050
+Wire Wire Line
+	950  7150 2050 7150
+Wire Wire Line
+	950  7250 2050 7250
+Entry Wire Line
+	3650 5750 3750 5850
+Entry Wire Line
+	3650 5850 3750 5950
+Entry Wire Line
+	3650 6050 3750 6150
+Entry Wire Line
+	3650 6150 3750 6250
+Entry Wire Line
+	3650 6450 3750 6550
+Entry Wire Line
+	3650 6550 3750 6650
+Entry Wire Line
+	3650 6650 3750 6750
+Entry Wire Line
+	3650 6750 3750 6850
+Entry Wire Line
+	3650 6850 3750 6950
+Entry Wire Line
+	3650 6950 3750 7050
+Entry Wire Line
+	3650 7050 3750 7150
+Entry Wire Line
+	3650 7150 3750 7250
+Entry Wire Line
+	3650 7250 3750 7350
+Entry Wire Line
+	850  5650 950  5750
+Entry Wire Line
+	850  5750 950  5850
+Entry Wire Line
+	850  6150 950  6250
+Entry Wire Line
+	850  6450 950  6550
+Entry Wire Line
+	850  6650 950  6750
+Entry Wire Line
+	850  6750 950  6850
+Entry Wire Line
+	850  6850 950  6950
+Entry Wire Line
+	850  6950 950  7050
+Entry Wire Line
+	850  7050 950  7150
+Entry Wire Line
+	850  7150 950  7250
+Wire Bus Line
+	850  5350 3750 5350
+Wire Bus Line
+	3750 5350 3750 7350
+Text Label 9750 2300 0    60   ~ 0
+HS_CAN_H
+Text Label 9250 2300 2    60   ~ 0
+HS_CAN_L
+Text Label 9750 2100 0    60   ~ 0
+MS_CAN_H
+Text Label 9250 2100 2    60   ~ 0
+MS_CAN_L
+Text Label 9250 2700 2    60   ~ 0
+VBATT
+Text Label 9750 1300 0    60   ~ 0
+ESCL
+Text Label 9250 1600 2    60   ~ 0
+ANTI-THEFT
+Text Label 9250 1900 2    60   ~ 0
+GND
+Text Label 9750 1600 0    60   ~ 0
+LIN_(contact_spiral)
+Text Label 9250 1300 2    60   ~ 0
+GND
+Entry Wire Line
+	8550 1200 8650 1300
+Wire Wire Line
+	8650 1300 9250 1300
+Entry Wire Line
+	8550 1500 8650 1600
+Entry Wire Line
+	8550 1800 8650 1900
+Wire Wire Line
+	8650 1600 9250 1600
+Wire Wire Line
+	8650 1900 9250 1900
+Entry Wire Line
+	8550 2000 8650 2100
+Entry Wire Line
+	8550 2200 8650 2300
+Wire Wire Line
+	8650 2300 9250 2300
+Entry Wire Line
+	8550 2600 8650 2700
+Wire Wire Line
+	8650 2700 9250 2700
+Wire Wire Line
+	8650 2100 9250 2100
+Entry Wire Line
+	10700 1300 10800 1400
+Entry Wire Line
+	10700 2100 10800 2200
+Entry Wire Line
+	10700 2300 10800 2400
+NoConn ~ 9750 1300
+Entry Wire Line
+	10700 1600 10800 1700
+Wire Wire Line
+	9750 1300 10700 1300
+Wire Wire Line
+	9750 2100 10700 2100
+Wire Wire Line
+	9750 2300 10700 2300
+NoConn ~ 9250 2600
+NoConn ~ 9250 2500
+NoConn ~ 9250 2400
+NoConn ~ 9250 2200
+NoConn ~ 9250 2000
+NoConn ~ 9250 1800
+NoConn ~ 9250 1700
+NoConn ~ 9250 1500
+NoConn ~ 9250 1400
+NoConn ~ 9250 1200
+NoConn ~ 9750 1400
+NoConn ~ 9750 1200
+NoConn ~ 9750 1700
+NoConn ~ 9750 1800
+NoConn ~ 9750 1900
+NoConn ~ 9750 2000
+NoConn ~ 9750 2200
+NoConn ~ 9750 2400
+NoConn ~ 9750 2500
+NoConn ~ 9750 2600
+NoConn ~ 9750 2700
+Wire Bus Line
+	10800 700  10800 2400
+Wire Bus Line
+	8550 700  8550 2600
+Wire Wire Line
+	9750 1600 10700 1600
 $EndSCHEMATC

@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "USB mini-B")(type Legacy)(uri /mnt/DATA2/pCloud/job/KiCAD/libs/footprints/54819-0572.mod)(options "")(descr ""))
+  (lib (name Kulibin)(type KiCad)(uri /mnt/DATA2/pCloud/job/KiCAD/libs/kulibin-auto-img.pretty)(options "")(descr "user lib"))
+  (lib (name zulljon)(type KiCad)(uri /mnt/DATA2/pCloud/job/KiCAD/libs/footprints.pretty)(options "")(descr "user lib"))
+  (lib (name DigiKey)(type KiCad)(uri /mnt/DATA2/pCloud/job/KiCAD/digikey-kicad-library/digikey-footprints.pretty/)(options "")(descr "digikey store"))
+)
