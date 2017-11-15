@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/mnt/DATA2/pCloud/job/KiCAD/libs/symbols;/mnt/DATA2/pCloud/job/KiCAD/digikey-kicad-library/symbols
+LibDir=/mnt/DATA2/pCloud/job/KiCAD/zpkl/symbols;/mnt/DATA2/pCloud/job/KiCAD/digikey-kicad-library/symbols
 [eeschema/libraries]
 LibName1=power
 LibName2=device
