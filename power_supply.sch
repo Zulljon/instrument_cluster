@@ -78,7 +78,7 @@ F 3 "" H 2400 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3650 5200 2    60   ~ 0
-+5V_B
++5V_B_module
 Text Label 1700 1300 2    60   ~ 0
 Vbatt
 Text Label 1750 2950 2    60   ~ 0
@@ -278,7 +278,7 @@ F 3 "" H 1750 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 3650 5950 2    60   ~ 0
-+5V_A
++5V_A_module
 Text Notes 2850 4750 0    118  ~ 0
 connectors
 Text Notes 1900 1350 0    118  ~ 0
@@ -350,7 +350,7 @@ U 1 1 5A0729E7
 P 2850 2950
 F 0 "U2" H 3550 3100 50  0000 C CNN
 F 1 "LM2575S-5.0_NOPB" H 3550 2600 50  0000 C CNN
-F 2 "zulljon:TO170P1435X457-6N" H 3550 2500 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5_TabPin6" H 3550 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/lm2575" H 3550 2400 50  0001 C CNN
 F 4 "SIMPLE SWITCHER 1.23V to 37V, 1A Low Component Count Step-Down Regulator" H 3550 2300 50  0001 C CNN "Description"
 F 5 "RS" H 3550 2200 50  0001 C CNN "Supplier_Name"
@@ -360,9 +360,9 @@ F 7 "LM2575S-5.0/NOPB" H 3550 1900 50  0001 C CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Text Label 5350 1900 0    60   ~ 0
-+5V_B
++5V_B_module
 Text Label 5400 3050 0    60   ~ 0
-+5V_A
++5V_A_module
 Text HLabel 2050 1950 0    60   Output ~ 0
 FUEL_ADC_POWER
 Text Notes 7400 5550 0    118  ~ 0
