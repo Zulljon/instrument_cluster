@@ -572,7 +572,7 @@ U 1 1 5A09AC68
 P 5450 9650
 F 0 "J5" H 5800 9800 50  0000 C CNN
 F 1 "54819-0572" H 5800 9300 50  0000 C CNN
-F 2 "54819-0572:MOLEXMINIBTYPEB_1" H 5800 9200 50  0001 C CNN
+F 2 "zulljon:USB_mini_B" H 5800 9200 50  0001 C CNN
 F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us/0548190572_IO_CONNECTORS.pdf" H 5800 9100 50  0001 C CNN
 F 4 "Surface mount onthego connector,1A 30V Molex On-The-Go Series Right Angle SMT Version 2.0 Type B Mini USB Connector Receptacle, 30 V, 1A" H 5800 9000 50  0001 C CNN "Description"
 F 5 "RS" H 5800 8900 50  0001 C CNN "Supplier_Name"
@@ -580,8 +580,6 @@ F 6 "5151995P" H 5800 8800 50  0001 C CNN "RS Part Number"
 F 7 "Molex" H 5800 8700 50  0001 C CNN "Manufacturer_Name"
 F 8 "54819-0572" H 5800 8600 50  0001 C CNN "Manufacturer_Part_Number"
 F 9 "70266924" H 5800 8500 50  0001 C CNN "Allied_Number"
-F 10 "" H 5800 8400 50  0001 C CNN "Other Part Number"
-F 11 "" H 6000 8300 50  0001 C CNN "Height"
 	1    5450 9650
 	1    0    0    -1  
 $EndComp
