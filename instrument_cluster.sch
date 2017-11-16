@@ -99,7 +99,6 @@ F8 "+5V_B" O R 7450 3650 59
 F9 "USB_A" I L 5950 3600 59 
 F10 "USB_B" I L 5950 3700 59 
 F11 "FUEL_ADC_POWER" O R 7450 3350 59 
-F12 "LIN_+12V" O R 7450 3250 59 
 $EndSheet
 $Sheet
 S 6200 1450 1150 950 
@@ -140,8 +139,6 @@ F18 "ENGINE(coolant_level)" I L 2350 2450 60
 F19 "LAW_WASHER(fluid_level)" I L 2350 2550 60 
 F20 "BRAKE(fluid_level)" I L 2350 2650 60 
 F21 "BELT_MINDER" I L 2350 2750 60 
-F22 "LIN_+12V" I L 2350 3750 60 
-F23 "LIN" B L 2350 2850 60 
 $EndSheet
 Text Notes 7200 5900 0    118  ~ 0
 two separate module on 1 PCB\n- module B powered from Vbatt\n- module A powered from IGN\n(Vbatt present always)
@@ -186,7 +183,7 @@ FUEL_TANK_in
 Entry Wire Line
 	850  7400 950  7500
 Wire Wire Line
-	950  7500 1300 7500
+	950  7500 1550 7500
 Wire Bus Line
 	850  700  850  7400
 Wire Bus Line
@@ -351,8 +348,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 3650 950  3650
 Wire Wire Line
-	2350 3750 950  3750
-Wire Wire Line
 	2350 3950 2250 3950
 Wire Wire Line
 	2250 3950 2250 4050
@@ -370,19 +365,13 @@ $EndComp
 Entry Wire Line
 	850  3550 950  3650
 Entry Wire Line
-	850  3650 950  3750
-Entry Wire Line
 	5250 3500 5350 3600
 Entry Wire Line
 	5250 3600 5350 3700
-Text Label 1050 3750 0    60   ~ 0
-LIN_+12V
 Text Label 1050 3650 0    60   ~ 0
 USB_Vbus_B
 Text Label 5400 2250 0    60   ~ 0
 USB_Vbus_A
-Text Label 7550 3250 0    60   ~ 0
-LIN_+12V
 Text Label 7550 3550 0    60   ~ 0
 +3V3_A
 Text Label 7550 3450 0    60   ~ 0
@@ -399,10 +388,6 @@ Wire Wire Line
 	7450 3550 8200 3550
 Wire Wire Line
 	7450 3450 8200 3450
-Wire Wire Line
-	7450 3250 8200 3250
-Entry Wire Line
-	8200 3250 8300 3350
 Entry Wire Line
 	8200 3350 8300 3450
 Entry Wire Line
@@ -433,12 +418,6 @@ Text Label 1050 3450 0    60   ~ 0
 +5V_B
 Text Label 1050 3550 0    60   ~ 0
 +3V3_B
-Text Label 1000 2850 0    60   ~ 0
-LIN_(contact_spiral)
-Entry Wire Line
-	850  2750 950  2850
-Wire Wire Line
-	950  2850 2350 2850
 Text Label 5350 3600 0    60   ~ 0
 USB_Vbus_A
 Text Label 5350 3700 0    60   ~ 0
@@ -697,4 +676,16 @@ NoConn ~ 9750 1500
 Connection ~ 1300 7500
 Wire Wire Line
 	1300 7500 1300 7550
+NoConn ~ 9750 1600
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5A0F23B6
+P 1550 7500
+F 0 "#FLG05" H 1550 7575 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 7650 50  0000 C CNN
+F 2 "" H 1550 7500 50  0001 C CNN
+F 3 "" H 1550 7500 50  0001 C CNN
+	1    1550 7500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
