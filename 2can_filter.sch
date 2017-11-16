@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:instrument_cluster-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -52,7 +53,7 @@ Comment3 ""
 Comment4 "Кулибин"
 $EndDescr
 $Comp
-L STM32F105RBTx U5
+L STM32F105RBTx-RESCUE-instrument_cluster U5
 U 1 1 5A09EB17
 P 4900 2900
 F 0 "U5" H 2200 4825 50  0000 L BNN
