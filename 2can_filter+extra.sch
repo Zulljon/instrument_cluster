@@ -133,9 +133,7 @@ F 3 "" H 14250 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13900 1500 14000 1500
-Wire Wire Line
-	14000 1500 14100 1500
+	13900 1500 14100 1500
 Wire Wire Line
 	14000 1450 14000 1500
 Connection ~ 14000 1500
@@ -159,17 +157,7 @@ F 3 "" H 2050 10050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 1250 6750 1250
-Wire Wire Line
-	6750 1250 6850 1250
-Wire Wire Line
-	6850 1250 6950 1250
-Wire Wire Line
-	6950 1250 7050 1250
-Wire Wire Line
-	7050 1250 7150 1250
-Wire Wire Line
-	7150 1250 7250 1250
+	4050 1250 7250 1250
 Wire Wire Line
 	7150 1250 7150 1350
 Wire Wire Line
@@ -192,22 +180,14 @@ Connection ~ 6950 1250
 Wire Wire Line
 	6750 5350 6750 5450
 Wire Wire Line
-	6750 5450 6850 5450
-Wire Wire Line
-	6850 5450 6950 5450
-Wire Wire Line
-	6950 5450 7050 5450
-Wire Wire Line
-	7050 5450 7150 5450
+	6750 5450 7150 5450
 Wire Wire Line
 	7150 5450 7150 5350
 Wire Wire Line
 	7050 5350 7050 5450
 Connection ~ 7050 5450
 Wire Wire Line
-	6950 5350 6950 5450
-Wire Wire Line
-	6950 5450 6950 5550
+	6950 5350 6950 5550
 Connection ~ 6950 5450
 Wire Wire Line
 	6850 5350 6850 5450
@@ -226,20 +206,14 @@ $EndComp
 Text Label 3150 9950 0    60   ~ 0
 +3V3
 Wire Wire Line
-	13900 1700 14000 1700
-Wire Wire Line
-	14000 1700 14100 1700
+	13900 1700 14100 1700
 Wire Wire Line
 	14000 1750 14000 1700
 Connection ~ 14000 1700
 Wire Wire Line
 	13900 1600 14500 1600
 Wire Wire Line
-	14500 1500 14500 1600
-Wire Wire Line
-	14500 1600 14500 1700
-Wire Wire Line
-	14500 1700 14500 1750
+	14500 1500 14500 1750
 Wire Wire Line
 	14500 1700 14400 1700
 Connection ~ 14500 1700
@@ -282,11 +256,7 @@ $EndComp
 Wire Wire Line
 	13900 3000 14500 3000
 Wire Wire Line
-	14500 2900 14500 3000
-Wire Wire Line
-	14500 3000 14500 3100
-Wire Wire Line
-	14500 3100 14500 3150
+	14500 2900 14500 3150
 Wire Wire Line
 	14500 3100 14400 3100
 Connection ~ 14500 3100
@@ -294,16 +264,12 @@ Wire Wire Line
 	14400 2900 14500 2900
 Connection ~ 14500 3000
 Wire Wire Line
-	13900 2900 14000 2900
-Wire Wire Line
-	14000 2900 14100 2900
+	13900 2900 14100 2900
 Wire Wire Line
 	14000 2850 14000 2900
 Connection ~ 14000 2900
 Wire Wire Line
-	13900 3100 14000 3100
-Wire Wire Line
-	14000 3100 14100 3100
+	13900 3100 14100 3100
 Wire Wire Line
 	14000 3150 14000 3100
 Connection ~ 14000 3100
@@ -465,9 +431,7 @@ SWD_+3V3
 Text Label 2900 9750 2    60   ~ 0
 SWD_+3V3
 Wire Wire Line
-	2550 9950 2900 9950
-Wire Wire Line
-	2900 9950 3150 9950
+	2550 9950 3150 9950
 Wire Wire Line
 	2900 9750 2900 9950
 Connection ~ 2900 9950
@@ -509,17 +473,13 @@ Wire Wire Line
 Wire Wire Line
 	2750 4050 2750 4000
 Wire Wire Line
-	2150 3050 2150 3600
-Wire Wire Line
-	2150 3600 2150 3700
+	2150 3050 2150 3700
 Wire Wire Line
 	2150 3600 2300 3600
 Wire Wire Line
 	2600 3600 2750 3600
 Wire Wire Line
-	2750 3150 2750 3600
-Wire Wire Line
-	2750 3600 2750 3700
+	2750 3150 2750 3700
 Connection ~ 2150 3600
 Connection ~ 2750 3600
 $Comp
@@ -629,32 +589,30 @@ $EndComp
 Wire Wire Line
 	6300 9750 6400 9750
 Wire Wire Line
-	6400 9750 6400 9850
-Wire Wire Line
-	6400 9850 6400 9900
-Text HLabel 9400 7300 0    60   Input ~ 0
-TRIP_COMPUTER
-Text HLabel 9400 7500 0    60   Input ~ 0
-ILLUM
-Text HLabel 9400 7700 0    60   Input ~ 0
-ANTI-THEFT
-Text HLabel 6400 7250 0    60   Input ~ 0
-PAD-WEAR
-Text HLabel 6400 7450 0    60   Input ~ 0
-OIL(pressure_level)
+	6400 9750 6400 9900
 Text HLabel 6400 7650 0    60   Input ~ 0
+TRIP_COMPUTER
+Text HLabel 6400 7450 0    60   Input ~ 0
+ILLUM
+Text HLabel 10400 7300 2    60   Input ~ 0
+ANTI-THEFT
+Text HLabel 9400 7300 0    60   Input ~ 0
+PAD-WEAR
+Text HLabel 7400 7550 2    60   Input ~ 0
+OIL(pressure_level)
+Text HLabel 9400 7700 0    60   Input ~ 0
 PARKING-BRAKE
 Text HLabel 9450 9900 0    60   Input ~ 0
 FUEL_ADC_1
 Text HLabel 9450 10300 0    60   Input ~ 0
 FUEL_ADC_2
-Text HLabel 10400 7600 2    60   Input ~ 0
-ENGINE(coolant_level)
-Text HLabel 10400 7800 2    60   Input ~ 0
-LAW_WASHER(fluid_level)
 Text HLabel 7400 7750 2    60   Input ~ 0
+ENGINE(coolant_level)
+Text HLabel 7400 7250 2    60   Input ~ 0
+LAW_WASHER(fluid_level)
+Text HLabel 6400 7250 0    60   Input ~ 0
 BRAKE(fluid_level)
-Text HLabel 7400 7550 2    60   Input ~ 0
+Text HLabel 10400 7800 2    60   Input ~ 0
 BELT_MINDER
 Text Label 9400 7100 2    60   ~ 0
 +3V3
@@ -683,9 +641,7 @@ F 3 "" H 10200 9900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9850 9900 9950 9900
-Wire Wire Line
-	9950 9900 10050 9900
+	9850 9900 10050 9900
 Wire Wire Line
 	9550 9900 9450 9900
 Wire Wire Line
@@ -718,9 +674,7 @@ F 3 "" H 10200 10300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9850 10300 9950 10300
-Wire Wire Line
-	9950 10300 10050 10300
+	9850 10300 10050 10300
 Wire Wire Line
 	9550 10300 9450 10300
 Wire Wire Line
@@ -742,9 +696,7 @@ F 3 "" H 10400 10600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 9900 10400 10300
-Wire Wire Line
-	10400 10300 10400 10600
+	10400 9900 10400 10600
 Connection ~ 10400 10300
 Text Label 10500 9700 0    60   ~ 0
 stm_adc_1
@@ -754,16 +706,12 @@ Wire Wire Line
 	4150 3050 2150 3050
 Wire Wire Line
 	2750 3150 4150 3150
-NoConn ~ 10400 7300
-NoConn ~ 10400 7200
-NoConn ~ 7400 7250
-NoConn ~ 7400 7150
-Text Label 9400 7200 2    60   ~ 0
+Text Label 6400 7550 2    60   ~ 0
 trip_comp
-Text Label 9400 7400 2    60   ~ 0
-illum
-Text Label 9400 7600 2    60   ~ 0
-anti-theft
+Text Label 6400 7350 2    60   ~ 0
+illum_stm
+Text Label 10400 7200 0    60   ~ 0
+anti-theft_stm
 $Comp
 L GND #PWR043
 U 1 1 5A0A1F34
@@ -779,19 +727,19 @@ Wire Wire Line
 	6300 7750 6300 7850
 Wire Wire Line
 	6300 7750 6400 7750
-Text Label 10400 7700 0    60   ~ 0
+Text Label 7400 7150 0    60   ~ 0
 washer
-Text Label 10400 7500 0    60   ~ 0
-engine_coolant
-Text Label 7400 7450 0    60   ~ 0
-belt
 Text Label 7400 7650 0    60   ~ 0
-brake_fluid_level
-Text Label 6400 7550 2    60   ~ 0
-parking_brakes
+engine_coolant
+Text Label 10400 7700 0    60   ~ 0
+belt
 Text Label 6400 7150 2    60   ~ 0
+brake_fluid_level
+Text Label 9400 7600 2    60   ~ 0
+parking_brakes
+Text Label 9400 7200 2    60   ~ 0
 pad_wear
-Text Label 6400 7350 2    60   ~ 0
+Text Label 7400 7450 0    60   ~ 0
 oil_pressure_level
 Text Label 4150 4550 2    60   ~ 0
 parking_brakes
@@ -810,9 +758,7 @@ washer
 Text Label 9750 2350 0    60   ~ 0
 trip_comp
 Text Label 4150 4250 2    60   ~ 0
-anti-theft
-Text Label 4150 4350 2    60   ~ 0
-illum
+anti-theft_stm
 NoConn ~ 4150 4650
 NoConn ~ 4150 4750
 NoConn ~ 4150 4850
@@ -888,11 +834,7 @@ $EndComp
 Wire Wire Line
 	2450 4050 2450 3800
 Wire Wire Line
-	1900 4050 2150 4050
-Wire Wire Line
-	2150 4050 2450 4050
-Wire Wire Line
-	2450 4050 2750 4050
+	1900 4050 2750 4050
 Connection ~ 2450 4050
 Wire Wire Line
 	2450 3400 1900 3400
@@ -924,4 +866,10 @@ Text Label 9750 1850 0    60   ~ 0
 stm_adc_1
 Text Label 4150 3750 2    60   ~ 0
 stm_adc_2
+NoConn ~ 9400 7400
+NoConn ~ 9400 7500
+NoConn ~ 10400 7500
+NoConn ~ 10400 7600
+Text Label 4150 4350 2    60   ~ 0
+illum_stm
 $EndSCHEMATC
