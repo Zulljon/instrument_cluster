@@ -914,4 +914,8 @@ Connection ~ 9350 3300
 Connection ~ 9050 3300
 Connection ~ 8750 3300
 Connection ~ 8450 3300
+Text Notes 8450 2500 0    60   ~ 0
+C7 C11 C13 C15 C17 C19\nmust be near the power pins of MCU
+Text Notes 8450 3550 0    60   ~ 0
+C10 C12 C14 C16 C18 C20\nmust be near the power pins of MCU
 $EndSCHEMATC
