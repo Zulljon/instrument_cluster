@@ -1,4 +1,4 @@
-update=Чт 16 ноя 2017 16:44:31
+update=Ср 22 ноя 2017 12:33:29
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/mnt/DATA2/pCloud/job/KiCAD/zpkl/symbols;/mnt/DATA2/pCloud/job/KiCAD/digikey-kicad-library/symbols
+LibDir=../zpkl/symbols;../digikey-kicad-library/symbols
 [eeschema/libraries]
 LibName1=instrument_cluster-rescue
 LibName2=power
