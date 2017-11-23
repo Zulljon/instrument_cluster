@@ -188,23 +188,23 @@ $EndComp
 $Comp
 L GND #PWR08
 U 1 1 5A048D0B
-P 9050 2400
-F 0 "#PWR08" H 9050 2150 50  0001 C CNN
-F 1 "GND" H 9050 2250 50  0000 C CNN
-F 2 "" H 9050 2400 50  0001 C CNN
-F 3 "" H 9050 2400 50  0001 C CNN
-	1    9050 2400
+P 9050 2450
+F 0 "#PWR08" H 9050 2200 50  0001 C CNN
+F 1 "GND" H 9050 2300 50  0000 C CNN
+F 2 "" H 9050 2450 50  0001 C CNN
+F 3 "" H 9050 2450 50  0001 C CNN
+	1    9050 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR09
 U 1 1 5A09EB28
-P 9050 4250
-F 0 "#PWR09" H 9050 4000 50  0001 C CNN
-F 1 "GND" H 9050 4100 50  0000 C CNN
-F 2 "" H 9050 4250 50  0001 C CNN
-F 3 "" H 9050 4250 50  0001 C CNN
-	1    9050 4250
+P 9050 4300
+F 0 "#PWR09" H 9050 4050 50  0001 C CNN
+F 1 "GND" H 9050 4150 50  0000 C CNN
+F 2 "" H 9050 4300 50  0001 C CNN
+F 3 "" H 9050 4300 50  0001 C CNN
+	1    9050 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -494,15 +494,13 @@ Connection ~ 4800 5000
 Wire Wire Line
 	9050 1500 9050 1400
 Wire Wire Line
-	8450 2100 8450 2350
-Wire Wire Line
 	8450 2100 8550 2100
 Wire Wire Line
-	9050 2300 9050 2400
+	9050 2300 9050 2450
 Wire Wire Line
 	8450 3950 8550 3950
 Wire Wire Line
-	9050 4150 9050 4250
+	9050 4150 9050 4300
 Wire Wire Line
 	2100 6800 2100 6650
 Wire Wire Line
@@ -548,13 +546,11 @@ Wire Wire Line
 	5500 6600 5600 6600
 Connection ~ 5600 6600
 Wire Wire Line
-	8450 2350 9050 2350
-Connection ~ 9050 2350
+	8450 2400 9050 2400
+Connection ~ 9050 2400
 Wire Wire Line
-	9050 4200 8450 4200
-Connection ~ 9050 4200
-Wire Wire Line
-	8450 4200 8450 3950
+	9050 4250 8450 4250
+Connection ~ 9050 4250
 Wire Wire Line
 	9050 3350 9050 3250
 Wire Wire Line
@@ -644,7 +640,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 4150 10700 4150
 Wire Wire Line
-	10700 3350 9550 3350
+	9550 3350 10700 3350
 Wire Wire Line
 	9550 3350 9550 3650
 Wire Wire Line
@@ -661,4 +657,26 @@ Wire Wire Line
 Connection ~ 9800 4150
 Text Notes 8850 3050 0    60   ~ 0
 1 transient-voltage-suppression (TVS) diods\n   must be close to CAN connectors\n2 terminated resistors (60 Omh)\n   must be close to CAN transivers
+$Comp
+L R R3
+U 1 1 5A16A204
+P 8450 2250
+F 0 "R3" V 8530 2250 50  0000 C CNN
+F 1 "10k" V 8450 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8380 2250 50  0001 C CNN
+F 3 "" H 8450 2250 50  0001 C CNN
+	1    8450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A16A369
+P 8450 4100
+F 0 "R4" V 8530 4100 50  0000 C CNN
+F 1 "10k" V 8450 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8380 4100 50  0001 C CNN
+F 3 "" H 8450 4100 50  0001 C CNN
+	1    8450 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
