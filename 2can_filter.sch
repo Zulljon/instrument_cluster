@@ -371,12 +371,12 @@ $EndComp
 $Comp
 L R R2
 U 1 1 5A0C2815
-P 4400 6500
-F 0 "R2" V 4480 6500 50  0000 C CNN
-F 1 "22" V 4400 6500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4330 6500 50  0001 C CNN
-F 3 "" H 4400 6500 50  0001 C CNN
-	1    4400 6500
+P 4250 6500
+F 0 "R2" V 4330 6500 50  0000 C CNN
+F 1 "22" V 4250 6500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4180 6500 50  0001 C CNN
+F 3 "" H 4250 6500 50  0001 C CNN
+	1    4250 6500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -526,9 +526,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 6500 5600 6650
 Wire Wire Line
-	3850 6500 4250 6500
+	3850 6500 4100 6500
 Wire Wire Line
-	4550 6500 4650 6500
+	4400 6500 4650 6500
 Wire Wire Line
 	4650 6600 4250 6600
 Wire Wire Line
@@ -679,4 +679,8 @@ F 3 "" H 8450 4100 50  0001 C CNN
 	1    8450 4100
 	1    0    0    -1  
 $EndComp
+Text Label 4600 6600 3    60   ~ 0
+module_a_usb_D+
+Text Label 4450 6500 3    60   ~ 0
+module_a_usb_D-
 $EndSCHEMATC
