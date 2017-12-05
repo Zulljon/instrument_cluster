@@ -489,7 +489,7 @@ AR Path="/5A09AC68" Ref="J5"  Part="1"
 AR Path="/5A0472F5/5A09AC68" Ref="J5"  Part="1" 
 F 0 "J5" H 3600 7200 50  0000 C CNN
 F 1 "54819-0572" H 3600 6700 50  0000 C CNN
-F 2 "zulljon:USB_mini_B" H 3600 6600 50  0001 C CNN
+F 2 "zpkl:USB_mini_B" H 3600 6600 50  0001 C CNN
 F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us/0548190572_IO_CONNECTORS.pdf" H 3600 6500 50  0001 C CNN
 F 4 "Surface mount onthego connector,1A 30V Molex On-The-Go Series Right Angle SMT Version 2.0 Type B Mini USB Connector Receptacle, 30 V, 1A" H 3600 6400 50  0001 C CNN "Description"
 F 5 "RS" H 3600 6300 50  0001 C CNN "Supplier_Name"
