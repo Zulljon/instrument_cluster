@@ -33,10 +33,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:stm32
-LIBS:LM2596SX-5.0_NOPB
-LIBS:lm2575s-5
-LIBS:74HC4050D
-LIBS:54819-0572
+LIBS:zpkl
 LIBS:instrument_cluster-cache
 EELAYER 25 0
 EELAYER END
@@ -77,13 +74,13 @@ $EndComp
 Text HLabel 5200 800  2    60   Input ~ 0
 +3V3_STM_A
 Text HLabel 10700 1500 2    60   BiDi ~ 0
-CAN1_H
+CAN_HS_H
 Text HLabel 10700 2300 2    60   BiDi ~ 0
-CAN1_L
+CAN_HS_L
 Text HLabel 10700 3350 2    60   BiDi ~ 0
-CAN2_H
+CAN_MS_H
 Text HLabel 10700 4150 2    60   BiDi ~ 0
-CAN2_L
+CAN_MS_L
 $Comp
 L TJA1040T U7
 U 1 1 5A0478A4
@@ -415,21 +412,21 @@ SWCLK
 Text Label 4600 6250 2    60   ~ 0
 USB_Vbus
 Text Label 7700 3800 0    60   ~ 0
-CAN1_RX
+CAN_HS_RX
 Text Label 7700 3900 0    60   ~ 0
-CAN1_TX
+CAN_HS_TX
 Text Label 7700 3600 0    60   ~ 0
-CAN2_TX
+CAN_MS_TX
 Text Label 7700 3500 0    60   ~ 0
-CAN2_RX
+CAN_MS_RX
 Text Label 8550 3650 2    60   ~ 0
-CAN2_RX
+CAN_MS_RX
 Text Label 8550 3550 2    60   ~ 0
-CAN2_TX
+CAN_MS_TX
 Text Label 8550 1800 2    60   ~ 0
-CAN1_RX
+CAN_HS_RX
 Text Label 8550 1700 2    60   ~ 0
-CAN1_TX
+CAN_HS_TX
 $Comp
 L D_TVS D10
 U 1 1 5A159360
