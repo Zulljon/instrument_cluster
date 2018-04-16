@@ -417,9 +417,9 @@ Text Label 2500 7250 2    60   ~ 0
 USB_D+
 Text Label 2500 7150 2    60   ~ 0
 USB_D-
-Text Label 7400 2250 0    60   ~ 0
-USB_D+
 Text Label 7400 2350 0    60   ~ 0
+USB_D+
+Text Label 7400 2250 0    60   ~ 0
 USB_D-
 Text HLabel 9250 3050 0    60   Input ~ 0
 +5V_CAN_B

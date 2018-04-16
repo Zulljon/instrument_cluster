@@ -1,4 +1,4 @@
-update=Ср 22 ноя 2017 12:33:29
+update=Пн 16 апр 2018 12:22:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,8 +63,7 @@ LibName31=atmel
 LibName32=contrib
 LibName33=valves
 LibName34=stm32
-LibName35=C:/Program Files/KiCad/share/kicad/library/stm32
-LibName36=LM2596SX-5.0_NOPB
-LibName37=lm2575s-5
-LibName38=74HC4050D
-LibName39=54819-0572
+LibName35=LM2596SX-5.0_NOPB
+LibName36=lm2575s-5
+LibName37=74HC4050D
+LibName38=54819-0572

@@ -299,9 +299,9 @@ Text Label 3850 6600 2    60   ~ 0
 USB_D+
 Text Label 3850 6500 2    60   ~ 0
 USB_D-
-Text Label 7700 2400 0    60   ~ 0
-USB_D+
 Text Label 7700 2500 0    60   ~ 0
+USB_D+
+Text Label 7700 2400 0    60   ~ 0
 USB_D-
 Text Label 7700 2200 0    60   ~ 0
 USB_Vbus
