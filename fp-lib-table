@@ -1,6 +1,5 @@
 (fp_lib_table
-  (lib (name Kulibin)(type KiCad)(uri ../zpkl/kulibin-auto-img.pretty)(options "")(descr "user lib"))
-  (lib (name zpkl)(type KiCad)(uri ../zpkl/footprints.pretty)(options "")(descr "user lib"))
-  (lib (name DigiKey)(type KiCad)(uri ../digikey-kicad-library/digikey-footprints.pretty)(options "")(descr "digikey store"))
-  (lib (name usb)(type Legacy)(uri ../zpkl/footprints/UX60-MB-5ST.mod)(options "")(descr ""))
+  (lib (name Kulibin)(type KiCad)(uri ${KIPRJMOD}/../zpkl/kulibin-auto-img.pretty)(options "")(descr "user lib"))
+  (lib (name zpkl)(type KiCad)(uri ${KIPRJMOD}/../zpkl/footprints.pretty)(options "")(descr "user lib"))
+  (lib (name DigiKey)(type KiCad)(uri ${KIPRJMOD}/../digikey-kicad-library/digikey-footprints.pretty)(options "")(descr "digikey store"))
 )

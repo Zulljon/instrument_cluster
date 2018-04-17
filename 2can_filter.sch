@@ -351,9 +351,9 @@ $Comp
 L 54819-0572 J3
 U 1 1 5A09A3F6
 P 4650 6400
-F 0 "J3" H 5000 6550 50  0000 C CNN
-F 1 "USB mini-B SMD" H 5100 6050 50  0000 C CNN
-F 2 "zpkl:USB_mini_B" H 5000 5950 50  0001 C CNN
+F 0 "J3" H 5050 6650 50  0000 C CNN
+F 1 "USB mini-B" H 5100 6550 50  0000 C CNN
+F 2 "zpkl:USB-B-M5-SMD-C" H 5000 5950 50  0001 C CNN
 F 3 "http://www.molex.com/webdocs/datasheets/pdf/en-us/0548190572_IO_CONNECTORS.pdf" H 5000 5850 50  0001 C CNN
 F 4 "Surface mount onthego connector,1A 30V Molex On-The-Go Series Right Angle SMT Version 2.0 Type B Mini USB Connector Receptacle, 30 V, 1A" H 5000 5750 50  0001 C CNN "Description"
 F 5 "RS" H 5000 5650 50  0001 C CNN "Supplier_Name"
